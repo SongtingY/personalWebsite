@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
-function SideBar(){
-    <section className='sideBar'>
+const SideBar = () => (
+    <section className='sidebar'>
         <section className='intro'>
-            <Link to="/" className='pic'>
+            <Link to="/" className='logo'>
                 <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
             </Link>
             <header>
@@ -16,11 +16,11 @@ function SideBar(){
                 <p><a href='mailto:songtingyang.ba@gmail.com'>songtingyang.ba@gmail.com</a></p>
             </header>
         </section>
-        <section className='info'>
+        <section className='blurb'>
             <h2>About</h2>
             <p> Hi my name is Songting. </p>
         </section>
     </section>
-}
+)
 
 export default SideBar;

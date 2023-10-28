@@ -4,7 +4,7 @@ import routes from '../../data/routes'
 
 const Navigation = () => (
     <header className='header'>
-        <h1 className='indexLink'>
+        <h1 className='index-link'>
             {routes.filter((l) => l.index).map((l)=>(
                 <Link key={l.label} to={l.path}>{l.path}</Link>
             ))}

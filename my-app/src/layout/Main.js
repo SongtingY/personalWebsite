@@ -23,5 +23,21 @@ const Main = (props) => (
   </HelmetProvider>
 );
 
+// set type fo main.props
+Main.props = {
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]),
+    title:PropTypes.string,
+    description: PropTypes.string
+}
+
+// set default value to props
+Main.defaultProps = {
+    children: null,
+    title: null,
+    description: "Songss' personal websites"
+}
 
 export default Main;

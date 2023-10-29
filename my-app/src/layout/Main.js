@@ -5,6 +5,7 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import SideBar from '../components/Template/SideBar';
 import Navigation from '../components/Template/Navigation';
+import Footer from '../components/Template/Footer';
 
 
 const Main = (props) => (
@@ -19,6 +20,7 @@ const Main = (props) => (
             {props.children}
         </div>
         <SideBar />
+        <Footer />
     </div>
   </HelmetProvider>
 );

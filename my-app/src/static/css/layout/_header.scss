@@ -46,10 +46,30 @@
 			white-space: nowrap;
 
 			a {
-				font-size: 0.7em;
+				font-size: 1em;
 			}
 		}
 
+
+		.logoAndName{
+			display: inline;
+
+			h1{
+				position: absolute;
+				top: 0;
+				left: 40px;
+			}
+
+			img {
+				margin-left: 20px;
+				margin: "auto";
+				width: 35px;
+				height: 35px;
+				border-radius: 30px;
+				vertical-align: middle;
+				border: 0.1rem solid;
+			}
+		}
 		.links {
 			@include vendor('flex', '1');
 			border-left: solid 1px _palette(border);
@@ -58,6 +78,9 @@
 			margin-left: 1.5em;
 			overflow: hidden;
 			padding-left: 1.5em;
+			width: 28%;
+			position: absolute;
+			right: 0;
 
 			ul {
 				li {

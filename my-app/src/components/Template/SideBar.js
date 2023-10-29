@@ -3,11 +3,18 @@ import { Link } from 'react-router-dom';
 
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
+// const style  = {
+//         margin: "auto",
+//         width: "200px",
+//         height: "196px",
+//         borderRadius: "150px",
+//     };
+
 const SideBar = () => (
     <section className='sidebar'>
-        <section className='intro'>
+        <section id='intro'>
             <Link to="/" className='logo'>
-                <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
+                <img src='/images/me2.png' alt="" />
             </Link>
             <header>
                 <h2>

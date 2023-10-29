@@ -1,7 +1,23 @@
 import React from 'react'
+import Main from '../layout/Main';
 
-export default function Contact() {
-  return (
-    <div>Contact</div>
-  )
-}
+const Contact = () =>{
+    
+    return (
+      <Main title="Contact" description="Contact me!!!!">
+      <article className='post' id="contact">
+        <header>
+          <div className="title">
+            <h2>Contact</h2>
+          </div>
+        </header>
+        <div className="email-at">
+          <p>Feel free to get in touch. You can email me at: </p>
+        </div>
+      </article>
+  </Main>
+    )
+
+};
+
+export default Contact;

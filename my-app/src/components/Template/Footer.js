@@ -13,7 +13,7 @@ const Footer = () => (
             </li>
             ))}
         </ul>
-        <p className="copyright">&copy; Songting&apos;Yang <Link to="/">mldangelo.com</Link>.</p>
+        <p className="copyright">&copy; Songting&apos;Yang <Link to="/">songss.com</Link>.</p>
     </section>
 );
 

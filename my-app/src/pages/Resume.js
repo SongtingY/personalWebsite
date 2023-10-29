@@ -2,11 +2,13 @@ import React from 'react'
 import Main from '../layout/Main';
 import Degree from '../components/Resume/Degree';
 import degrees from '../data/Resume/degrees';
-
+import Experience from '../components/Resume/Experience';
+import experiences from '../data/Resume/experiences';
 
 
 const sections = {
-  Degree: () => <Degree data={degrees} />
+  Degree: () => <Degree data={degrees} />,
+  Experience: () => <Experience data={experiences}/>
 };
 
 const Resume = () => (

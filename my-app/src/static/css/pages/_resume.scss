@@ -17,7 +17,14 @@
 				margin: 0;
 		}
 	}
+	.title_download {
+		display: grid;
 
+		.download {
+			position: absolute;
+			right: 20px
+		}
+	}
 	.education {
 
 		.title {
@@ -37,20 +44,23 @@
 		}
 	}
 
-	.jobs-container {
-		.points {
-			li {
+	.project {
+		.title {
+			text-align: center;
+		}
+		.job {
+			margin: 1em;
+			p{
 				margin: 0;
-				padding: 0;
-					font-size: .9em;
 			}
 		}
-		
-		.companyProfile {
-			margin-bottom: 0.5em;
-			font-size: 0.9em;
-		}
 	}
+
+	.container {
+		display: grid;
+		margin-bottom: 7px;
+	}
+
 
 	.courses {
 		padding-top: 1.6em;
@@ -76,10 +86,11 @@
 		}
 	}
 
-	.companyProfile {
+	.summary {
 		margin-bottom: 0.5em;
 		font-size: 0.9em;
 	}
+
 
 	.references {
 		margin: 2em 0;
@@ -91,6 +102,93 @@
 
 .daterange {
 	margin-bottom: .2em;
+}
+
+.jobs-container {
+	.points {
+		li {
+			margin: 0;
+			padding: 0;
+			font-size: .9em;
+		}
+	}
+
+	.companyProfile {
+		margin-bottom: 0.5em;
+		font-size: 0.9em;
+	}
+
+	.company {
+		margin-bottom: .1em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: 1em;
+		display: flex;
+		  align-items: center;
+		margin-right: 10px;
+	}
+
+	.companyProfile {
+		font-size: 1em;
+		font-family: "Source Sans Pro";
+	}
+
+	.location {
+		position: absolute;
+		right: 30px;
+		vertical-align: middle;
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.position {
+		text-transform: none;
+		padding-top: 0.3em;
+		margin-bottom: 0.1em;
+		font-size: 0.8em;
+	}
+
+	.year {
+		position: absolute;
+		right: 30px;
+		vertical-align: middle;
+		margin: 0;
+	}
+}
+
+.project-container {
+	.points {
+		li {
+			margin: 0;
+			padding: 0;
+				font-size: .9em;
+		}
+	}
+
+	.name {
+		margin-bottom: .1em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: 1em;
+		display: flex;
+		  align-items: center;
+		margin-right: 10px;
+	}
+
+	.icon {
+		position: absolute;
+		right: 30%;
+		margin-top: 0;
+	}
+
+	.year {
+		position: absolute;
+		right: 30px;
+		vertical-align: middle;
+		margin: 0;
+	}
 }
 
 .degree-container {
@@ -117,8 +215,8 @@
 	}
 
 	.location {
-		// position: absolute;
-		// right: 30px;
+		position: absolute;
+		right: 30px;
 		vertical-align: middle;
 		margin: 0;
 		display: flex;

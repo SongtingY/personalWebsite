@@ -12,7 +12,6 @@ const Education = ({ data }) => (
             <p className="degree">{data.degree}</p>
             <p className='year'>{data.yearStart} - {data.yearEnd}</p>
         </div>
-        
       </header>
     </article>
 );

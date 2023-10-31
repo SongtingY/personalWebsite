@@ -3,6 +3,7 @@ const work = [
       name: 'Sanxin Technology, Inc.',
       position: 'Full stack development Intern',
       companyProfile:"a technology company help local enterprises to digital transformation.",
+      location: 'Yunnan, China',
       startDate: '2022-01-01',
       endDate: '2022-01-01',
       summary: [

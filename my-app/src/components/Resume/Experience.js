@@ -13,49 +13,38 @@ const Job = ({ data }) => (
     //   techStack
     <article className="jobs-container">
       <header>
-        <div>
+        <div className='container'>
             <h4 className='company'>{data.name}</h4>
             <p className='location'>{data.location}</p>
         </div>
-        <div>
+        <div className='container'>
             <p className="position">{data.position}</p>
             <p className='year'>{dayjs(data.startDate).format('MMMM YYYY')} - {data.endDate ? dayjs(data.endDate).format('MMMM YYYY') : 'PRESENT'}</p>
         </div>
-        <Markdown
-            options={{
-                overrides: {
-                    p: {
-                        props: {
-                            className: 'companyProfile',
-                        },
-                    },
-                },
-            }}
-        >
-        {data.companyProfile}
-        </Markdown>
+        </header>
+       <p className='companyProfile'>{data.companyProfile}</p>
         <ul className="points">
            {data.summary.map((point) => (
             <li key={point}>{point}</li>
             ))
             }
       </ul>
-      </header>
     </article>
 );
 
 const Experience = ({ data }) => (
     <div className="experience">
         <div className="link-to" id="experience" />
-        <div className="title">
-        <h3>Experience</h3>
-        </div>
-        {data.map((job) => (
-        <Job
-            data={job}
-            key={`${job.name}-${job.position}`}
-        />
-        ))}
+            <div className="title">
+                <h3>Experience</h3>
+            </div>
+            {data.map((job) => (
+            <Job
+                data={job}
+                key={`${job.name}-${job.position}`}
+            />
+            ))}
+            
     </div>
 );
 

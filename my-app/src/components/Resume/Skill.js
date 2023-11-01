@@ -1,19 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Markdown from 'markdown-to-jsx';
-import dayjs from 'dayjs';
 
-const skillAndCerti = ({ data }) => (
+const SkillAndCerti = ({ data }) => (
     // name: 'Programming Languages',
     // list 
-    <article className="jobs-container">
+    <article className="skill-container">
         <h4 className='name'>{data.name}</h4>
-        {/* <p className='list'>{data.list}</p> */}
-        {data.list.map((tech) => (
+        <div className='element'>
+        {data.element.map((tech) => (
           <button key={tech} style={{ margin: '5px' }}>
-            {tech}
+            <Markdown>
+                {tech}
+            </Markdown>
           </button>
         ))}
+        </div>
+        
     </article>
 );
 
@@ -24,26 +27,26 @@ const Skill = ({ data }) => (
                 <h3>Skill</h3>
             </div>
             {data.map((skill) => (
-            <skillAndCerti
+            <SkillAndCerti
                 data={skill}
-                key={skill}
+                key={skill.name}
             />
             ))}
             
     </div>
 );
 
-skillAndCerti.propTypes = {
+SkillAndCerti.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string,
-        list: PropTypes.arrayOf(PropTypes.string),
+        element: PropTypes.arrayOf(PropTypes.string),
     })),
 };
 
 Skill.propTypes = {
     data: PropTypes.shape({
         name: PropTypes.string.isRequired,
-        list: PropTypes.arrayOf(PropTypes.string.isRequired),
+        element: PropTypes.arrayOf(PropTypes.string.isRequired),
     }).isRequired,
 };
 

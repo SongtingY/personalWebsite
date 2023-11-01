@@ -14,7 +14,11 @@ const Cell = ({ data }) => (
         </header>
         <ul className="points">
             {data.summary.map((point) => (
-            <li key={point}>{point}</li>
+            <li key={point}>
+            <Markdown>
+                {point}
+            </Markdown>          
+            </li>
             ))
             }
         </ul>

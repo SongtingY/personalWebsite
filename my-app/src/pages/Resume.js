@@ -11,7 +11,6 @@ import skills from '../data/Resume/skills';
 
 import { DownloadOutlined } from '@ant-design/icons';
 import { Button, Divider, Flex, Radio } from 'antd';
-import DownloadButton from '../components/Resume/Download';
 
 
 const sections = {

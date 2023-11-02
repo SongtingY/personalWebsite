@@ -1,0 +1,29 @@
+#fitness {
+    h3 {
+        text-align: center;
+    }
+
+    .basicStatists {
+        border-width: medium;
+        border-color: black;
+    }
+
+    .basic-container {
+        display: flex;
+        justify-content: space-between;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8em;
+            text-transform: uppercase;
+
+            .info {
+                margin-right: 20px;
+                
+            }
+        }
+
+    }
+}
+

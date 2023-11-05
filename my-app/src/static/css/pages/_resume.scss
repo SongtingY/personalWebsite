@@ -1,7 +1,9 @@
 /* Resume */
 
 #resume {
-
+	h3 {
+		background-color: _palette(border-bg);
+	}
 	.link-to {
 		position: relative;
 		top: -4.5em;

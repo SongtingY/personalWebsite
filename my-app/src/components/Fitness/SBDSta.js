@@ -1,63 +1,69 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import SBDComponents from './SBD/SBDComponents'; // Ensure you import SBD correctly
 
-const WeightConverter = ({ initialWeight, initialUnit }) => {
-    const [weight, setWeight] = useState(initialWeight);
-    const [unit, setUnit] = useState(initialUnit);
-  
-const convertWeight = (currentUnit, weight) => {
-    return currentUnit === 'kg' ? weight * 2.20462 : weight / 2.20462;
-};
-  
-const toggleUnit = () => {
-    const newUnit = unit === 'kg' ? 'lbs' : 'kg';
-    setWeight((prevWeight) => convertWeight(unit, prevWeight).toFixed(2));
-    setUnit(newUnit);
+const LB_TO_KG = 0.45;
+const KG_TO_LB = 2.20;
+
+const convertWeight = (weight, currentUnit) => {
+    return currentUnit === 'LBS' ? (weight * LB_TO_KG).toFixed(0) : (weight * KG_TO_LB).toFixed(2);
 };
 
-const Basic = ({ data }) => (
+const SBDSta = ({ initialData }) => {
+
+    // const [data, setData] = useState(initialData);
     
-      <div className='container'>
-        <div className='info'>{data.info}:</div>
-        <div>
-        <div className='number'><b>{data.stat}</b>  {data.measurement}</div>
-        <button onClick={toggleUnit}>
-            {unit === 'kg' ? 'lbs' : 'kg'}
-        </button>
-        </div>
-      </div>
-);
+    const [unit, setUnit] = useState('LBS');
 
-const BasicSta = ({ data }) => (
-    <div className="basicStatists">
-        <div className="link-to" id="stat" />
-        <div className="title">
-            <h3>Basic Statistics</h3>
-        </div>
-        <article className="basic-container">
-            {data.map((sta) => (
-            <Basic
-                data={sta}
-                key={sta.info}
-            />
-            ))}
-        </article>
-    </div>
-);
+    const toggleWeightUnit = () => {
+        const newUnit = unit === 'LBS' ? 'kg' : 'LBS';
 
-BasicSta.propTypes = {
-    data: PropTypes.arrayOf(PropTypes.shape({
-      info: PropTypes.string,
-      stat: PropTypes.number,
-      measurement: PropTypes.string,
+        // const convertedData = data.map(item => ({
+        //     ...item,
+        //     currentWeight: convertWeight(item.currentWeight, unit),
+        //     goalWeight: convertWeight(item.goalWeight, unit),
+        // }));
+
+        // // Debug: Log the converted data to see if conversion is correct
+        // // console.log('Converted Data:', convertedData);
+
+        // setData(convertedData);
+        setUnit(newUnit);
+    };
+    
+
+    return (
+        <div className="sbdStatists">
+            <div className="title">
+                <h3>SBD Statistics</h3>
+            </div>
+            <button onClick={toggleWeightUnit}>Switch to {unit === 'LBS' ? 'kg' : 'LBS'}</button>
+            <div className='time'>
+                <div><b>Current</b></div>
+                <div><b>Goal</b></div>
+            </div>
+            <article className="sbd-container">
+                {initialData.map((sta, index) => (
+                <SBDComponents
+                    key={sta.name}
+                    data={sta}
+                    unit={unit}
+                    convertWeight={convertWeight}
+                    index={index}
+                />
+                ))}
+            </article>
+        </div>
+    );
+};
+
+SBDSta.propTypes = {
+    initialData: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string,
+        currentWeight: PropTypes.string,
+        goalWeight: PropTypes.string,
+        unit: PropTypes.string,
     })),
 };
 
-Basic.propTypes = {
-    data: PropTypes.shape({
-      info: PropTypes.string.isRequired,
-      stat: PropTypes.number.isRequired,
-      measurement: PropTypes.string.isRequired,
-    }).isRequired,
-};
-export default BasicSta;
+export default SBDSta;

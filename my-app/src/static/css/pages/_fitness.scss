@@ -1,7 +1,19 @@
 #fitness {
     h3 {
         text-align: center;
+        background-color: _palette(border-bg);
     }
+
+    .link-container h4 {
+		text-decoration:none;
+		border-bottom: none;
+		display: inline-flex;
+
+		a {
+				padding: 0 .5em;
+				margin: 0;
+		}
+	}
 
     .basicStatists {
         border-width: medium;
@@ -11,19 +23,113 @@
     .basic-container {
         display: flex;
         justify-content: space-between;
+        padding-top: 20px;
 
         .container {
             display: flex;
             justify-content: space-between;
-            font-size: 0.8em;
+            font-size: 0.9em;
             text-transform: uppercase;
+            align-items: center;
 
             .info {
                 margin-right: 20px;
                 
             }
+
+            button {
+                padding: 0 10px;
+                margin-left: 10px;
+            }
         }
 
     }
+
+    .sbdStatists {
+        margin-top: 20px;
+        padding: 30px 0;
+        text-transform: uppercase;
+        // border-style: solid;
+        // border-color: rgb(198 198 198);
+        // border-width: 1px;
+        // background-color: _palette(border);
+        
+        h3 {
+            margin: 0;
+        }
+        .time {
+            display: flex;
+            margin-left: 45%;
+            justify-content: space-between;
+            margin-right: 45px;
+            font-size: 0.9em;
+        }
+
+        button {
+            left: 87%;
+            position: relative;
+            margin: 10px;
+            padding: 0 10px;
+            font-size: 0.5em;
+        }
+        .sbd-container {
+            .container{
+                margin: 0 40px;
+                justify-content: space-between;
+                display: flex;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+    .splitSta {
+        margin-top: 30px;
+        text-transform: uppercase;
+
+        p {
+            margin-bottom: 7px;
+        }
+
+        .summary {
+            font-size: 0.8em;
+            text-transform: none;
+            font-family: _font(family-fixed);
+            font-weight: 500;
+            margin: 0 30px;
+        }
+
+        .Split-container {
+            display: flex;
+            justify-content: space-between;
+            margin-left: 80px;
+            margin-top: 30px;
+
+            .descrip {
+                flex: 1;
+                padding: 20px 20px;
+                padding-left: 30px;
+
+            }
+
+            .images {
+                flex: 1;
+                // text-align: center;
+                padding-left: 30px;
+
+                img{
+                    width: '100%';
+                    height: 250px;
+                }
+            }
+
+            
+        }
+
+        .points {
+            margin-top: 8px;
+            font-size: 0.8em;
+        }
+    }
+    
 }
 

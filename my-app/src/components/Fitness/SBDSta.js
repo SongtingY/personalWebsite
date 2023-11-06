@@ -17,16 +17,6 @@ const SBDSta = ({ initialData }) => {
 
     const toggleWeightUnit = () => {
         const newUnit = unit === 'LBS' ? 'kg' : 'LBS';
-
-        // const convertedData = data.map(item => ({
-        //     ...item,
-        //     currentWeight: convertWeight(item.currentWeight, unit),
-        //     goalWeight: convertWeight(item.goalWeight, unit),
-        // }));
-
-        // // Debug: Log the converted data to see if conversion is correct
-        // // console.log('Converted Data:', convertedData);
-
         // setData(convertedData);
         setUnit(newUnit);
     };

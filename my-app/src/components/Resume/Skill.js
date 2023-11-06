@@ -24,7 +24,7 @@ const Skill = ({ data }) => (
     <div className="skill">
         <div className="link-to" id="skill" />
             <div className="title">
-                <h3>Skill</h3>
+                <h3>Skills</h3>
             </div>
             {data.map((skill) => (
             <SkillAndCerti

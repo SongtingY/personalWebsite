@@ -29,7 +29,7 @@
             display: flex;
             justify-content: space-between;
             font-size: 0.9em;
-            text-transform: uppercase;
+            // text-transform: uppercase;
             align-items: center;
 
             .info {
@@ -40,6 +40,7 @@
             button {
                 padding: 0 10px;
                 margin-left: 10px;
+                text-transform: uppercase;
             }
         }
 
@@ -48,7 +49,7 @@
     .sbdStatists {
         margin-top: 20px;
         padding: 30px 0;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         // border-style: solid;
         // border-color: rgb(198 198 198);
         // border-width: 1px;
@@ -93,7 +94,8 @@
         .summary {
             font-size: 0.8em;
             text-transform: none;
-            font-family: _font(family-fixed);
+            font-family: "Optima", sans-serif;
+			font-size: medium;
             font-weight: 500;
             margin: 0 30px;
         }
@@ -101,7 +103,7 @@
         .Split-container {
             display: flex;
             justify-content: space-between;
-            margin-left: 80px;
+            margin-left: 40px;
             margin-top: 30px;
 
             .descrip {

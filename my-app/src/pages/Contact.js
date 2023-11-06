@@ -12,7 +12,7 @@ const Contact = () =>{
           </div>
         </header>
         <div className="email-at">
-          <p>Feel free to get in touch. You can email me at: </p>
+          <p>Feel free to get in touch. You can email me at:<a href='mailto:songtingyang.ba@gmail.com'>  songtingyang.ba@gmail.com</a></p>
         </div>
       </article>
   </Main>

@@ -11,7 +11,7 @@ const splits = [
             "Leg Extension": "https://www.verywellfit.com/leg-extensions-benefit-or-risk-3498573",
             "Leg Curls": "https://www.verywellfit.com/how-to-properly-execute-the-leg-curl-exercise-3498304"
         },
-        pic: "/images/split1.png"
+        pic: "/images/glute.jpg"
     },
     {
         title:"Chest And Back Day",
@@ -24,7 +24,7 @@ const splits = [
             "Single Arm Cable Row":"https://www.bodybuilding.com/exercises/seated-one-arm-cable-pulley-rows#:~:text=The%20single%2Darm%20cable%20seated,biceps%20to%20a%20lesser%20degree.",
             "Machine Seated Row": "https://www.youtube.com/watch?v=bPwsxx6D4So"
         },
-        pic: "/images/split1.png"
+        pic: "/images/back.jpg"
     },
     {
         title:"Should And Arm Day",
@@ -37,7 +37,7 @@ const splits = [
             "Tricep Extension":"https://www.youtube.com/watch?v=JDEDaZTEzGE",
             "Cable Rear Delt Fly":"https://www.youtube.com/watch?v=f5V2XHVR3Dg"
         },
-        pic: "/images/split1.png"
+        pic: "/images/front.jpg"
     }
 
 ];

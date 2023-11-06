@@ -43,6 +43,11 @@
 			p{
 				margin: 0;
 			}
+			
+		}
+		.companyProfile {
+			font-family: "Optima", sans-serif;
+			font-size: medium;
 		}
 	}
 
@@ -195,6 +200,39 @@
 	}
 }
 
+.curri-container {
+	.points {
+		li {
+			margin: 0;
+			padding: 0;
+				font-size: .9em;
+		}
+	}
+
+	.name {
+		margin-bottom: .1em;
+		text-transform: none;
+		letter-spacing: 0.16em;
+		font-size: 1em;
+		display: flex;
+		align-items: center;
+		margin-right: 10px;
+	}
+
+	.icon {
+		position: absolute;
+		right: 30%;
+		margin-top: 0;
+	}
+
+	.year {
+		position: absolute;
+		right: 30px;
+		vertical-align: middle;
+		margin: 0;
+	}
+}
+
 .degree-container {
 	margin-bottom: 20px;
     display: flex;
@@ -242,6 +280,7 @@
 		margin: 0;
 	}
 }
+
 
 .skill-container {
 	margin-bottom: 20px;

@@ -35,8 +35,26 @@ const projects = [
             'Preprocessed large data (1460 records, 80 variables) and dealt with missing values and outliers NumPy pandas. Performed correlation analysis to filter the 15 most relevant variables.',
             'Compared various evaluation metrics for 6 algorithms - KNN, Random Forest Regression, Gaussian, Catboost, XGBoost, and SVM. Selected the 4 most optimal ensembled models that achieved 0.13 MSE in prediction.'
         ],
-        icon: <GithubOutlined style={{ fontSize: '23px'}}/>,
-        link:'https://github.com/SongtingY/Personal-website'
+    },
+    {
+        name: 'McDonald Valuation',
+        startDate: '2022-04-01',
+        endDate: '2022-05-01',
+        summary: [
+            'Utilized Microsoft Excel to create a fully functioning 3-statement financial model with large historical and projected data. ',
+            'Evaluated key assumptions to stress test the feasibility of financial models for lending or investment purposes. Projected the income statement, balance sheet & Calculations',
+            'Calculated Trading & Transaction Comparables, and built the Discounted Cash Flow (DCF) model from the Cash Flow Statement. Determined whether a Company is trading above or below its intrinsic value Analysis at Various Prices (AVP)'
+        ],
+    },
+    {
+        name: 'Merge And Acquisition Consulting Project	 ',
+        startDate: '2021-11-01',
+        endDate: '2022-01-01',
+        summary: [
+            "Engaged the M&A transaction case of Morgan Stanley and E * Trade, analyzed the purchase price, transaction volume, and structure, synergy generated, and drafted the summarized memo ",
+            "Conducted commercial due diligence of target companies, analyzed the fintech industry, and completed the industry research report, including E-trades’ products and competitive advantages ",
+            "Performed financial due diligence, calculated EBITDA, EBITDA multiples, and enterprise value, conduct comparable analysis to complete valuation of the target firm, and provide investment and purchase decision rationales"
+        ],
     }
 
 ];

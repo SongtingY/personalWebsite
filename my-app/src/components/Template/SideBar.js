@@ -11,10 +11,10 @@ const { PUBLIC_URL } = process.env; // set automatically from package.json:homep
 //     };
 
 const SideBar = () => (
-    <section className='sidebar'>
+    <section id='sidebar'>
         <section id='intro'>
             <Link to="/" className='logo'>
-                <img src='/images/me2.png' alt="" />
+                <img src='/images/me2.jpg' alt="" />
             </Link>
             <header>
                 <h2>
@@ -25,7 +25,9 @@ const SideBar = () => (
         </section>
         <section className='blurb'>
             <h2>About</h2>
-            <p> Hi my name is Songting. </p>
+            <p> Hi there! I'm Songting Yang, a Computer Science master's student at Northeastern 
+            University with a strong foundation in Finance and Business Analytics from Rutgers 
+            and South China University of Technology. Aspiring to shape the future as a software engineer!</p>
         </section>
     </section>
 )

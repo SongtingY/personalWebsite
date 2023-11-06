@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const SBDComponents = ({ data, unit, convertWeight, index }) => (
   <div className='container'>
     <div className='info'>{data.name}:</div>
-    <div className='number' style={{paddingRight: index == 2? '35px' : 0 }}>
+    <div className='number' style={{paddingRight: index == 2? '20px' : 0 }}>
         <b>{unit === 'kg' ? convertWeight(data.currentWeight, 'LBS') : data.currentWeight}</b> {unit}
     </div>
     <div className='number'>

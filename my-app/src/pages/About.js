@@ -23,7 +23,7 @@ const About = () =>{
             <p> This is about me</p>
           </div>
         </header>
-        <Markdown>
+        <Markdown className="container">
           {markdown}
         </Markdown>
       </article>

@@ -4,7 +4,7 @@ import dayjs from 'dayjs';
 import Markdown from 'markdown-to-jsx';
 
 const Cell = ({ data }) => (
-    <article className="project-container">
+    <article className="curri-container">
         <header>
             <div className='container'>
                 <h4 className='name'>{data.name}</h4>
@@ -25,27 +25,26 @@ const Cell = ({ data }) => (
   </article>
   );
 
-const Project = ({ data }) => (
-    <div className="project">
-        <div className="link-to" id="project" />
+const ExtraCurri = ({ data }) => (
+    <div className="curri">
+        <div className="link-to" id="curri" />
             <div className="title">
-                <h3>Projects</h3>
+                <h3>Extracurricular Activities</h3>
             </div>
         {data.map((project) => (
             <Cell
             data={project}
-            key={project.title}
+            key={project.name}
             />
         ))}
     </div>
 );
   
-Project.propTypes = {
+ExtraCurri.propTypes = {
     data: PropTypes.arrayOf(PropTypes.shape({
         name: PropTypes.string,
         startDate: PropTypes.string,
         endDate: PropTypes.string,
-        summary: PropTypes.arrayOf(PropTypes.string),
     })),
 };
 
@@ -54,8 +53,7 @@ Cell.propTypes = {
         name: PropTypes.string.isRequired,
         startDate: PropTypes.string.isRequired,
         endDate: PropTypes.string.isRequired,
-        summary: PropTypes.arrayOf(PropTypes.string.isRequired),
     }).isRequired,
 };
   
-export default Project;
+export default ExtraCurri;

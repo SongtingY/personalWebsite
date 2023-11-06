@@ -4,10 +4,21 @@
 
   p {
     margin: auto;
+    // font-size: .8em;
   }
 
   h1 {
     font-size: .8em;
     margin-top: 3em;
+  }
+
+  .container {
+    p{
+      font-size: 0.9em;
+    }
+    
+    ul li{
+      font-size: 0.9em;
+    }
   }
 }

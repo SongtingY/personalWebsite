@@ -8,16 +8,19 @@ import Project from '../components/Resume/Project';
 import projects from '../data/Resume/projects';
 import Skill from '../components/Resume/Skill';
 import skills from '../data/Resume/skills';
+import extracurricular from '../data/Resume/extracurricular';
 
 import { DownloadOutlined } from '@ant-design/icons';
 import { Button, Divider, Flex, Radio } from 'antd';
+import ExtraCurri from '../components/Resume/ExtraCurri';
 
 
 const sections = {
   Degree: () => <Degree data={degrees} />,
-  Experience: () => <Experience data={experiences}/>,
-  Project: () => <Project data={projects}/>,
-  Skill: () => <Skill data={skills}/>
+  Experiences: () => <Experience data={experiences}/>,
+  Projects: () => <Project data={projects}/>,
+  EXTRACURRICULAR: () => <ExtraCurri data={ extracurricular } />,
+  Skills: () => <Skill data={skills}/>,
 };
 
 const Resume = () => (

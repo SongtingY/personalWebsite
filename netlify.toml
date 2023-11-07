@@ -1,6 +1,7 @@
 # netlify.toml
 [build]
   publish = "dist" # Directory to publish (this should be the output directory of your build)
+  CI='' npm run build # Build command
 
 # Redirects
 [[redirects]]

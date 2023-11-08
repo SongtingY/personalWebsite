@@ -1,7 +1,6 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://songtingy.songss.github.io/my-app",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.2.6",

@@ -27,7 +27,7 @@ const Cell = ({ data }) => (
 
 const ExtraCurri = ({ data }) => (
     <div className="curri">
-        <div className="link-to" id="curri" />
+        <div className="link-to" id="extracurricular" />
             <div className="title">
                 <h3>Extracurricular Activities</h3>
             </div>

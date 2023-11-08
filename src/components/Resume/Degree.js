@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 const Education = ({ data }) => (
     <article className="degree-container">
       <header>
-        <div class="container">
+        <div className="container">
             <h4 className="school"><a href={data.link}>{data.school}</a></h4> 
             <p className='location'>{data.location}</p>
         </div>
-        <div class="container">
+        <div className="container">
             <p className="degree">{data.degree}</p>
             <p className='year'>{data.yearStart} - {data.yearEnd}</p>
         </div>

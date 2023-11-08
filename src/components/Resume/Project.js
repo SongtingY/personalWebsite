@@ -7,8 +7,7 @@ const Cell = ({ data }) => (
     <article className="project-container">
         <header>
             <div className='container'>
-                <h4 className='name'>{data.name}</h4>
-                <p className='icon'><a href={data.link}>{data.icon}</a></p>
+                <h4 className='name'>{data.name}    <a href={data.link}>{data.icon}</a></h4>
                 <p className='year'>{dayjs(data.startDate).format('MMMM YYYY')} - {data.endDate ? dayjs(data.endDate).format('MMMM YYYY') : 'PRESENT'}</p>
             </div>
         </header>
@@ -27,14 +26,14 @@ const Cell = ({ data }) => (
 
 const Project = ({ data }) => (
     <div className="project">
-        <div className="link-to" id="project" />
+        <div className="link-to" id="projects" />
             <div className="title">
                 <h3>Projects</h3>
             </div>
         {data.map((project) => (
             <Cell
             data={project}
-            key={project.title}
+            key={project.name}
             />
         ))}
     </div>

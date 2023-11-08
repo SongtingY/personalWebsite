@@ -48,7 +48,6 @@
 		.companyProfile {
 			font-family: "Optima", sans-serif;
 			font-size: small;
-    		font-weight: 600;
 		}
 	}
 
@@ -124,8 +123,13 @@
 	}
 
 	.companyProfile {
+		
 		margin-bottom: 0.5em;
+		margin-left: 0.9em;
 		font-size: 0.9em;
+		// font-size: 1em;
+		font-family: "Raleway", Helvetica, sans-serif;
+		
 	}
 
 	.company {
@@ -134,13 +138,8 @@
 		letter-spacing: 0.16em;
 		font-size: 1em;
 		display: flex;
-		  align-items: center;
+		align-items: center;
 		margin-right: 10px;
-	}
-
-	.companyProfile {
-		font-size: 1em;
-		font-family: "Source Sans Pro";
 	}
 
 	.location {

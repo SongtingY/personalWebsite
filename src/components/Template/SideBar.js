@@ -25,9 +25,7 @@ const SideBar = () => (
         </section>
         <section className='blurb'>
             <h2>About</h2>
-            <p> Hi there! I'm Songting Yang, a Computer Science master's student at Northeastern 
-            University with a strong foundation in Finance and Business Analytics from Rutgers 
-            and South China University of Technology. Aspiring to shape the future as a software engineer!</p>
+            <p> Hi there! I'm Songting Yang, CS Student at Northeastern University, alumni of Rutgers University and SCUT. Aspiring to shape the future as a software engineer!</p>
         </section>
     </section>
 )

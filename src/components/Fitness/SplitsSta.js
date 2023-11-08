@@ -4,7 +4,7 @@ import Markdown from 'markdown-to-jsx';
 import dayjs from 'dayjs';
 import { Link } from 'react-router-dom';
 
-const Splits = ({ data, isImageLeft }) => (
+const Splits = ({ data, isImageLeft, index }) => (
     <article className="Split-container" style={{flexDirection: isImageLeft ? 'row' : 'row-reverse', alignItems: 'center', marginBottom: '20px' }}>
         <div className='descrip'>
             <header>
@@ -39,6 +39,7 @@ const SplitsSta = ({ data }) => (
                 data={job}
                 key={job.title}
                 isImageLeft={index % 2 === 0}
+                index = {index}
             />
             ))}
             

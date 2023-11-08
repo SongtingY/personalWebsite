@@ -19,7 +19,7 @@ const Main = (props) => (
         <div id="main">
             {props.children}
         </div>
-        <SideBar />
+        {props.fullPage ? null : <SideBar />}
         <Footer />
     </div>
   </HelmetProvider>

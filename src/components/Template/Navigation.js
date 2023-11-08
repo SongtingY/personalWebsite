@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import routes from '../../data/routes'
+import Hamburger from './Hamburger';
 
 const style  = {
     margin: "auto",
@@ -29,6 +30,7 @@ const Navigation = () => (
                 ))}
             </ul>
         </nav>
+        < Hamburger/>
     </header>
 );
 

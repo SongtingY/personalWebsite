@@ -61,14 +61,15 @@
 			}
 
 			img {
-				margin-left: 20px;
+				margin-left: 25px;
 				width: 35px;
 				height: 35px;
-				border-radius: 30px;
+				// border-radius: 30px;
 				vertical-align: middle;
-				border: 0.1rem solid;
+				// border: 0.1rem solid;
 			}
 		}
+		
 		.links {
 			@include vendor('flex', '1');
 			border-left: solid 1px _palette(border);

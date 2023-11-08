@@ -20,7 +20,7 @@ const About = () =>{
         <header>
           <div className='title'>
             <h2>About me</h2>
-            <p> This is about me</p>
+            <p> This is about me!! My story, my interest, and my dream!</p>
           </div>
         </header>
         <Markdown className="container">

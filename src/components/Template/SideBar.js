@@ -14,7 +14,7 @@ const SideBar = () => (
     <section id='sidebar'>
         <section id='intro'>
             <Link to="/" className='logo'>
-                <img src='/images/me2.jpg' alt="" />
+                <img src='/images/pro.jpg' alt="" />
             </Link>
             <header>
                 <h2>

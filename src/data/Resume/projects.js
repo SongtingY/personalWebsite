@@ -2,26 +2,41 @@ import {GithubOutlined} from "@ant-design/icons";
 
 const projects = [
     {
-        name: 'Nowcoder Platform',
+        name: 'MicroHub: Integrated Microservices Ecosystem',
+        startDate: '2024-01-01',
+        endDate: '2024-04-01',
+        summary: [
+        'Develop and deploy a series of microservices in <b>Go (Golang)</b>, including Front End, Authentication, Logging, Listener, Broker, and Mail services, employing <b>Postgres</b> and <b>MongoDB</b> for database management.',
+        'Implement inter-service communication via REST APIs, gRPC, and AMQP using <b>RabbitMQ</b>, optimizing data flow and service interoperability within a distributed application architecture.',
+        'Orchestrate containerized microservices deployment using <b>Docker Swarm</b> and <b>Kubernetes</b>, enabling efficient scaling, and updating of services with minimal downtime.'
+        ],
+        icon: <GithubOutlined style={{ fontSize: '23px'}}/>,
+        link:''
+    },
+    {
+        name: 'JavaBeans Forum: Interactive Coffee Community Platform',
         startDate: '2023-04-01',
-        endDate: '2022-09-01',
+        endDate: '2023-08-01',
         summary: [
         'Developed a comprehensive forum application using <b>Spring Boot</b> that featured email-based registration, MD5 password hashing with salting, dynamic captcha validation, post & comment creation, chat, and sensitive word filtering.',
         'Implemented user authentication by issuing login credentials stored in <b>Redis</b>, integrated <b>Spring Security</b> for user registration and password encryption, and utilized Thread Local to store user data facilitating distributed deployment.',
         'Implemented the full-text search with <b>Elasticsearch</b> and executed global search functionality with + IK tokenizer; used <b>Kafka</b> for real-time notifications and post synchronization.',
-        'Optimized server performance through a multi-tier caching strategy using <b>Caffeine</b> (local cache) by 80% and <b>Redis</b> (distributed cache) and utilized <b>Quartz</b> for distributed tasks like hot post ranking computation.'
+        'Optimized server performance by 60% through a multi-tier caching strategy using <b>Caffeine</b> and utilized <b>Quartz</b> for distributed tasks like hot post ranking computation.'
         ],
         icon: <GithubOutlined style={{ fontSize: '23px'}}/>,
         link:'https://github.com/SongtingY/nowcoderBackend'
     },
     {
-        name: 'Global Press Release System',
+        name: 'PressPulse: Dynamic Press Release Engagement Tool',
         startDate: '2022-05-01',
         endDate: '2022-07-01',
         summary: [
             'Developed a user-friendly interface for press release system that enabled users to access, distribute press releasee and press traffic visualization with React and JavaScript.',
             'Provided responsive web design using <b>React</b> with Ant Design, including features of search inventory, customizing press release layout for different types of medias and visualization.',
-            'Integrated <b>D3.js</b> for interactive data visualization; Utilized <b>Redux Toolkit</b> to manage application states and to handle asynchronous redux actions.'
+            'Integrated <b>D3.js</b> for interactive data visualization; Utilized <b>Redux Toolkit</b> to manage application states and to handle asynchronous redux actions.',
+            'Utilized <b>Amazon DynamoDB</b> for efficient and serverless data storage, enabling real-time press release updates and access',
+            'Leveraged on <b>Amazon EC2</b> instances to gain flexible server capacity that scales automatically to meet user demand.'
+
         ],
         icon: <GithubOutlined style={{ fontSize: '23px'}}/>,
         link:'https://github.com/SongtingY/Personal-website'

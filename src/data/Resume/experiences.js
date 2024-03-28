@@ -4,15 +4,13 @@ const work = [
       position: 'Full stack development Intern',
       companyProfile:"A tech company empowers local businesses to embrace the digital age, offering innovative solutions for digital and financial transformation. We pave the way for a seamless transition into smarter operations, enhanced online presence, and robust financial strategies, ensuring they thrive in today's fast-paced digital economy.",
       location: 'Yunnan, China',
-      startDate: '2022-01-01',
-      endDate: '2022-01-01',
+      startDate: '2023-05-01',
+      endDate: '2023-08-01',
       summary: [
-        'Designed and developed websites visualizing planting procedure with modules of plant search, user management, authentication and admin using <b>Node</b> and <b>Express</b>; containerized the microservices with <b>Docker</b> in <b>Kubernetes</b>.',
-        'Design and implemented efficient data model and operations using <b>MySQL</b> , optimized the database design with <b>CQRS</b> to improve the processing time of data query.',
-        'Designed REST APIs handling HTTP requests for <b>Elastic Search Engine</b> to effectively serve data dynamic inputs from xx users, increasing the latency of query speed.',
-        'Enhanced the web application’s 2Auth by implementing an SMS one-time-password authentication with <b>JWT</b>.',
-        'Created the dynamic fronted pages with re-usable components using <b>React</b>, <b>Next JS</b>, and <b>JavaScript</b>, using <b>jQuery</b> to respond to users’ events and MongoDB for user management.',
-        'Built a <b>CI/CD</b> pipeline using GitHub Actions to automate the testing process. Created unit tests with <b>Jest</b> and <b>Supertest</b>. Performed end-to-end usability tests on concurrency control mechanisms using <b>JMeter</b>.'
+        "Created the dynamic frontend pages with re-usable components using <b>React</b> , <b>JavaScript</b> , and <b>jQuery</b>  to respond to user event data, achieving a 40% increase in user engagement.",
+        "Designed and developed websites with <b>Node.js</b>  and <b>Express.js</b>  to visualize agricultural planting procedures, supporting efficient plant search, user management, authentication, and admin control.",
+        "Implemented efficient data models and operations using <b>MySQL</b>  and optimized database design with CQRS to improve data query processing time.",
+        "Enhanced the web application’s 2Auth by implementing an SMS one-time-password authentication with <b>JWT</b> ."
       ],
       techStack: [
         'MySql', 'Node', 'Express', 'CI/CD'
@@ -20,7 +18,7 @@ const work = [
     },
     {
       name: 'New York Bamboo Consulting	 ',
-      position: 'Strategic Marketing Consultant	  (Volunteer)',
+      position: 'Strategic Marketing Consultant',
       companyProfile:"A specialize in bridging opportunities, dedicated to helping Chinese international students secure promising job positions in the USA, navigating the complexities of cross-cultural employment with expertise and personalized support.",
       location: 'Remote',
       startDate: '2021-03-01',
